@@ -1,38 +1,45 @@
-# seismoalert
+# 🌍 SeismoAlert — система оценки сейсмической опасности
 
-This template should help get you started developing with Vue 3 in Vite.
+Веб-приложение для оценки сейсмической опасности на основе параметров землетрясения с использованием модели машинного обучения XGBoost.
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Как запустить проект 
+1. Клонируйте репозиторий
+  ```bash
+  git clone https://github.com/Milena827/SeismoAlert.git
+  cd seismoalert
+  ```
 
-## Recommended Browser Setup
+2. Установите зависимости
+  ```bash
+  npm install
+  ```
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+3. Запустите проект
+  ```bash
+  npm run dev
+  ```
 
-## Customize configuration
+4. Откройте в браузере: http://localhost:5173
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🛠 Технологии
+Frontend -Vue.js 3
 
-## Project Setup
+Стили	- Tailwind CSS
 
-```sh
-npm install
-```
+## 🎨 Функциональность
+Ввод параметров землетрясения (магнитуда, глубина, интенсивность)
 
-### Compile and Hot-Reload for Development
+Крупный цветной индикатор уровня опасности 
 
-```sh
-npm run dev
-```
+SHAP-анализ влияния факторов на прогноз
 
-### Compile and Minify for Production
+Рекомендации по реагированию
 
-```sh
-npm run build
-```
+Визуализация зоны поражения
+
+Тёмная / светлая тема
+
+## 👤 Авторы
+Ляуман Милена
