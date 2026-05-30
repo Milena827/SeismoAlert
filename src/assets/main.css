@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light Theme */
+:root {
+  --primary: #315D8A;
+  --secondary: #5F7EA5;
+  --bg: #F5F8FB;
+  --surface: #FFFFFF;
+  --surface-muted: #EAF0F6;
+  --text: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --danger: #DC2626;
+  --warning: #F97316;
+  --caution: #EAB308;
+  --safe: #22C55E;
+  --border: #E2E8F0;
+}
+
+/* Dark Theme */
+.dark {
+  --primary: #315D8A;
+  --secondary: #5F7EA5;
+  --bg: #1E293B;
+  --surface: #273449;
+  --surface-muted: #334155;
+  --text: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --danger: #DC2626;
+  --warning: #F97316;
+  --caution: #EAB308;
+  --safe: #22C55E;
+  --border: #475569;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg);
+    color: var(--text-secondary);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .danger-hero-red {
+    background: linear-gradient(135deg, #DC2626 0%, #991B1B 100%);
+  }
+  
+  .danger-hero-orange {
+    background: linear-gradient(135deg, #F97316 0%, #C2410C 100%);
+  }
+  
+  .danger-hero-yellow {
+    background: linear-gradient(135deg, #EAB308 0%, #A16207 100%);
+  }
+  
+  .danger-hero-green {
+    background: linear-gradient(135deg, #22C55E 0%, #166534 100%);
+  }
+}
